@@ -1,0 +1,65 @@
+{
+  "result": [
+    {
+      "skor": "2-2",
+      "date": "2022-04-02T10:30:00+03:00",
+      "away": "DG Sivasspor",
+      "home": "GZT Giresunspor"
+    },
+    {
+      "skor": "1-2",
+      "date": "2022-04-02T13:00:00+03:00",
+      "away": "FTA Antalyaspor",
+      "home": "Altay"
+    },
+    {
+      "skor": "0-4",
+      "date": "2022-04-02T13:00:00+03:00",
+      "away": "Fenerbahçe",
+      "home": "Yukatel Kayserispor"
+    },
+    {
+      "skor": "2-0",
+      "date": "2022-04-02T17:30:00+03:00",
+      "away": "VavaCars Fatih Karagümrük",
+      "home": "Galatasaray"
+    },
+    {
+      "skor": "2-1",
+      "date": "2022-04-03T10:30:00+03:00",
+      "away": "Gaziantep FK",
+      "home": "Kasımpaşa"
+    },
+    {
+      "skor": "2-1",
+      "date": "2022-04-03T13:00:00+03:00",
+      "away": "Çaykur Rizespor",
+      "home": "A. Alanyaspor"
+    },
+    {
+      "skor": "3-0",
+      "date": "2022-04-03T13:00:00+03:00",
+      "away": "Göztepe",
+      "home": "İttifak Holding Konyaspor"
+    },
+    {
+      "skor": "1-1",
+      "date": "2022-04-03T17:30:00+03:00",
+      "away": "Beşiktaş",
+      "home": "Trabzonspor"
+    },
+    {
+      "skor": "undefined-undefined",
+      "date": "2022-04-04T17:30:00+03:00",
+      "away": "Adana Demirspor",
+      "home": "Atakaş Hatayspor"
+    },
+    {
+      "skor": "undefined-undefined",
+      "date": "2022-04-04T17:30:00+03:00",
+      "away": "Öznur Kablo Yeni Malatyaspor",
+      "home": "M.Başakşehir"
+    }
+  ],
+  "success": true
+}

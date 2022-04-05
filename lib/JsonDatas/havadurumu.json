@@ -1,0 +1,90 @@
+{
+  "success": true,
+  "city": "ankara",
+  "result": [
+    {
+      "date": "04.04.2022",
+      "day": "Pazartesi",
+      "icon": "https://cdnydm.com/media/7FbW8fgzadAEm9nU6aT7Iw.png",
+      "description": "parçalı bulutlu",
+      "status": "Clouds",
+      "degree": "12.18",
+      "min": "3.77",
+      "max": "13.91",
+      "night": "10.57",
+      "humidity": "40"
+    },
+    {
+      "date": "05.04.2022",
+      "day": "Salı",
+      "icon": "https://cdnydm.com/media/7FbW8fgzadAEm9nU6aT7Iw.png",
+      "description": "kapalı",
+      "status": "Clouds",
+      "degree": "15.18",
+      "min": "9.02",
+      "max": "16.53",
+      "night": "12.82",
+      "humidity": "38"
+    },
+    {
+      "date": "06.04.2022",
+      "day": "Çarşamba",
+      "icon": "https://cdnydm.com/media/0wxKjdLS0A-RzdsoKoI1kA.png",
+      "description": "hafif yağmur",
+      "status": "Rain",
+      "degree": "15.27",
+      "min": "10.11",
+      "max": "15.68",
+      "night": "11.56",
+      "humidity": "53"
+    },
+    {
+      "date": "07.04.2022",
+      "day": "Perşembe",
+      "icon": "https://cdnydm.com/media/0wxKjdLS0A-RzdsoKoI1kA.png",
+      "description": "hafif yağmur",
+      "status": "Rain",
+      "degree": "18.21",
+      "min": "7.97",
+      "max": "21.46",
+      "night": "16.89",
+      "humidity": "42"
+    },
+    {
+      "date": "08.04.2022",
+      "day": "Cuma",
+      "icon": "https://cdnydm.com/media/0wxKjdLS0A-RzdsoKoI1kA.png",
+      "description": "orta şiddetli yağmur",
+      "status": "Rain",
+      "degree": "14.12",
+      "min": "8.8",
+      "max": "15.59",
+      "night": "8.8",
+      "humidity": "61"
+    },
+    {
+      "date": "09.04.2022",
+      "day": "Cumartesi",
+      "icon": "https://cdnydm.com/media/tr-Z7uMGW668t0R024tdJA.png",
+      "description": "açık",
+      "status": "Clear",
+      "degree": "16.88",
+      "min": "5.59",
+      "max": "20.62",
+      "night": "15.06",
+      "humidity": "35"
+    },
+    {
+      "date": "10.04.2022",
+      "day": "Pazar",
+      "icon": "https://cdnydm.com/media/7FbW8fgzadAEm9nU6aT7Iw.png",
+      "description": "kapalı",
+      "status": "Clouds",
+      "degree": "16.52",
+      "min": "13.04",
+      "max": "19.22",
+      "night": "13.98",
+      "humidity": "48"
+    }
+  ]
+}
