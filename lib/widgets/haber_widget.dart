@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:haber_gundem/models/gundem_models/HaberlerModel.dart';
+import 'package:haber_gundem/services/auth_services/status_service.dart';
+
+import '../utils/dbHelper.dart';
 
 class HaberWidget extends StatefulWidget {
   const HaberWidget({Key? key,required this.widget,required this.index}) : super(key: key);
@@ -12,6 +15,7 @@ class HaberWidget extends StatefulWidget {
 }
 
 class _HaberWidgetState extends State<HaberWidget> {
+  DatabaseHelper _databaseHelper = DatabaseHelper();
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -54,6 +58,21 @@ class _HaberWidgetState extends State<HaberWidget> {
               left: (MediaQuery.of(context).size.width/9),
               width: (MediaQuery.of(context).size.width/7)*5,
             ),
+            IconButton(
+              icon: Icon(Icons.cloud_upload_rounded),
+              onPressed: () => {
+                StatusService().addStatus(widget.widget.result![widget.index])
+              },
+            ),
+            Positioned(
+              top:50,
+              child: IconButton(
+                icon: Icon(Icons.save),
+                onPressed: () => {
+                  _databaseHelper.insert(widget.widget.result![widget.index])
+                },
+              ),
+            )
           ],
         ),
       ),

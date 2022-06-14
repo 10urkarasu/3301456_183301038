@@ -1,6 +1,6 @@
 import 'dart:convert';
 /// success : true
-/// result : [{"name":"Dolar","code":"USD","buying":"14.6779","buyingstr":"14,6779","selling":"14.6941","sellingstr":"14,6941","rate":"0.07","time":"08:19","date":"2022-04-04","datetime":"2022-04-04T05:19:00.000Z","calculated":"0"},{"name":"Euro","code":"EUR","buying":"16.223","buyingstr":"16,2230","selling":"16.2446","sellingstr":"16,2446","rate":"0.16","time":"08:19","date":"2022-04-04","datetime":"2022-04-04T05:19:00.000Z","calculated":"0"},{"name":"İngiliz Sterlini","code":"GBP","buying":"19.2603","buyingstr":"19,2603","selling":"19.2959","sellingstr":"19,2959","rate":"0.12","time":"08:19","date":"2022-04-04","datetime":"2022-04-04T05:19:00.000Z","calculated":"0"},{"name":"İsviçre Frangı","code":"CHF","buying":"15.8451","buyingstr":"15,8451","selling":"15.8651","sellingstr":"15,8651","rate":"0.01","time":"08:18","date":"2022-04-04","datetime":"2022-04-04T05:18:00.000Z","calculated":"0"},{"name":"Kanada Doları","code":"CAD","buying":"11.7357","buyingstr":"11,7357","selling":"11.744","sellingstr":"11,7440","rate":"0.13","time":"08:19","date":"2022-04-04","datetime":"2022-04-04T05:19:00.000Z","calculated":"0"},{"name":"Rus Rublesi","code":"RUB","buying":"0.1748","buyingstr":"0,1748","selling":"0.175","sellingstr":"0,1750","rate":"2","time":"08:19","date":"2022-04-04","datetime":"2022-04-04T05:19:00.000Z","calculated":"0"},{"name":"100 Japon Yeni","code":"JPY","buying":"11.9683","buyingstr":"11,9683","selling":"11.9844","sellingstr":"11,9844","rate":",-0.03","time":"08:19","date":"2022-04-04","datetime":"2022-04-04T05:19:00.000Z","calculated":"0"},{"name":"Kuveyt Dinarı","code":"KWD","buying":"48.3223","buyingstr":"48,3223","selling":"48.2169","sellingstr":"48,2169","rate":"-0.23","time":"08:19","date":"2022-04-04","datetime":"2022-04-04T05:19:00.000Z","calculated":"0"}]
+/// result : [{"name":"Dolar","code":"USD","buying":16.583,"buyingstr":"16,5830","selling":16.5904,"sellingstr":"16,5904","rate":1.07,"time":"11:34","date":"2022-06-06","datetime":"2022-06-06T08:34:00.000Z","calculated":0}]
 
 EkonomiModel ekonomiModelFromJson(String str) => EkonomiModel.fromJson(json.decode(str));
 String ekonomiModelToJson(EkonomiModel data) => json.encode(data.toJson());
@@ -40,15 +40,15 @@ class EkonomiModel {
 
 /// name : "Dolar"
 /// code : "USD"
-/// buying : "14.6779"
-/// buyingstr : "14,6779"
-/// selling : "14.6941"
-/// sellingstr : "14,6941"
-/// rate : "0.07"
-/// time : "08:19"
-/// date : "2022-04-04"
-/// datetime : "2022-04-04T05:19:00.000Z"
-/// calculated : "0"
+/// buying : 16.583
+/// buyingstr : "16,5830"
+/// selling : 16.5904
+/// sellingstr : "16,5904"
+/// rate : 1.07
+/// time : "11:34"
+/// date : "2022-06-06"
+/// datetime : "2022-06-06T08:34:00.000Z"
+/// calculated : 0
 
 Result resultFromJson(String str) => Result.fromJson(json.decode(str));
 String resultToJson(Result data) => json.encode(data.toJson());
@@ -56,15 +56,15 @@ class Result {
   Result({
       String? name, 
       String? code, 
-      String? buying, 
+      double? buying, 
       String? buyingstr, 
-      String? selling, 
+      double? selling, 
       String? sellingstr, 
-      String? rate, 
+      double? rate, 
       String? time, 
       String? date, 
       String? datetime, 
-      String? calculated,}){
+      int? calculated,}){
     _name = name;
     _code = code;
     _buying = buying;
@@ -93,27 +93,27 @@ class Result {
   }
   String? _name;
   String? _code;
-  String? _buying;
+  double? _buying;
   String? _buyingstr;
-  String? _selling;
+  double? _selling;
   String? _sellingstr;
-  String? _rate;
+  double? _rate;
   String? _time;
   String? _date;
   String? _datetime;
-  String? _calculated;
+  int? _calculated;
 
   String? get name => _name;
   String? get code => _code;
-  String? get buying => _buying;
+  double? get buying => _buying;
   String? get buyingstr => _buyingstr;
-  String? get selling => _selling;
+  double? get selling => _selling;
   String? get sellingstr => _sellingstr;
-  String? get rate => _rate;
+  double? get rate => _rate;
   String? get time => _time;
   String? get date => _date;
   String? get datetime => _datetime;
-  String? get calculated => _calculated;
+  int? get calculated => _calculated;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};

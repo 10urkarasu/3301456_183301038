@@ -75,6 +75,26 @@ class Result {
     _source = json['source'];
     _date = json['date'];
   }
+  Result.fromMap(Map<String, dynamic> map) {
+    this._key = map['key'];
+    this._url = map['url'];
+    this._description = map['description'];
+    this._image = map['image'];
+    this._name = map['name'];
+    this._source = map['source'];
+    this._date = map['date'];
+  }
+  Map<String, dynamic> toMap() {
+    var map = <String, dynamic>{};
+    map['key'] = key;
+    map['url'] = url;
+    map['description'] = description;
+    map['image'] = image;
+    map['name'] = name;
+    map['source'] = source;
+    map['date'] = date;
+    return map;
+  }
   String? _key;
   String? _url;
   String? _description;
@@ -102,5 +122,4 @@ class Result {
     map['date'] = _date;
     return map;
   }
-
 }

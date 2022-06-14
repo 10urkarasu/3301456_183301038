@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "337245496392",
+    "project_id": "habergundem-6e581",
+    "storage_bucket": "habergundem-6e581.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337245496392:android:a21eacaa682749c92d647d",
+        "android_client_info": {
+          "package_name": "com.example.haber_gundem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337245496392-mbaur0orj8br7b1uoo8dokqca4p510fr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf3A2vIBNNRsVz-7zxv5afRpR4pUG0cu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337245496392-mbaur0orj8br7b1uoo8dokqca4p510fr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

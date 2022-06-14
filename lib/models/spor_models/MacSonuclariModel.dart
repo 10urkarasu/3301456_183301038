@@ -1,5 +1,5 @@
 import 'dart:convert';
-/// result : [{"skor":"2-2","date":"2022-04-02T10:30:00+03:00","away":"DG Sivasspor","home":"GZT Giresunspor"},{"skor":"1-2","date":"2022-04-02T13:00:00+03:00","away":"FTA Antalyaspor","home":"Altay"},{"skor":"0-4","date":"2022-04-02T13:00:00+03:00","away":"Fenerbahçe","home":"Yukatel Kayserispor"},{"skor":"2-0","date":"2022-04-02T17:30:00+03:00","away":"VavaCars Fatih Karagümrük","home":"Galatasaray"},{"skor":"2-1","date":"2022-04-03T10:30:00+03:00","away":"Gaziantep FK","home":"Kasımpaşa"},{"skor":"2-1","date":"2022-04-03T13:00:00+03:00","away":"Çaykur Rizespor","home":"A. Alanyaspor"},{"skor":"3-0","date":"2022-04-03T13:00:00+03:00","away":"Göztepe","home":"İttifak Holding Konyaspor"},{"skor":"1-1","date":"2022-04-03T17:30:00+03:00","away":"Beşiktaş","home":"Trabzonspor"},{"skor":"undefined-undefined","date":"2022-04-04T17:30:00+03:00","away":"Adana Demirspor","home":"Atakaş Hatayspor"},{"skor":"undefined-undefined","date":"2022-04-04T17:30:00+03:00","away":"Öznur Kablo Yeni Malatyaspor","home":"M.Başakşehir"}]
+/// result : [{"skor":"1-1","date":"2022-05-20T17:00:00+03:00","away":"Galatasaray","home":"FTA Antalyaspor"},{"skor":"2-0","date":"2022-05-20T17:00:00+03:00","away":"Çaykur Rizespor","home":"Gaziantep FK"},{"skor":"2-4","date":"2022-05-21T13:00:00+03:00","away":"Kasımpaşa","home":"Altay"},{"skor":"2-1","date":"2022-05-21T13:00:00+03:00","away":"Yukatel Kayserispor","home":"DG Sivasspor"},{"skor":"1-1","date":"2022-05-21T16:00:00+03:00","away":"İttifak Holding Konyaspor","home":"Beşiktaş"},{"skor":"0-5","date":"2022-05-21T16:00:00+03:00","away":"Fenerbahçe","home":"Öznur Kablo Yeni Malatyaspor"},{"skor":"0-1","date":"2022-05-22T13:00:00+03:00","away":"A. Alanyaspor","home":"VavaCars Fatih Karagümrük"},{"skor":"3-1","date":"2022-05-22T13:00:00+03:00","away":"Trabzonspor","home":"M.Başakşehir"},{"skor":"7-0","date":"2022-05-22T16:00:00+03:00","away":"Göztepe","home":"Adana Demirspor"},{"skor":"4-1","date":"2022-05-22T16:00:00+03:00","away":"GZT Giresunspor","home":"Atakaş Hatayspor"}]
 /// success : true
 
 MacSonuclariModel macSonuclariModelFromJson(String str) => MacSonuclariModel.fromJson(json.decode(str));
@@ -38,10 +38,10 @@ class MacSonuclariModel {
 
 }
 
-/// skor : "2-2"
-/// date : "2022-04-02T10:30:00+03:00"
-/// away : "DG Sivasspor"
-/// home : "GZT Giresunspor"
+/// skor : "1-1"
+/// date : "2022-05-20T17:00:00+03:00"
+/// away : "Galatasaray"
+/// home : "FTA Antalyaspor"
 
 Result resultFromJson(String str) => Result.fromJson(json.decode(str));
 String resultToJson(Result data) => json.encode(data.toJson());

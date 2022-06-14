@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../../services/auth_services/auth_service.dart';
+
 class ProfilPage extends StatefulWidget {
   const ProfilPage({Key? key}) : super(key: key);
 
@@ -9,27 +11,43 @@ class ProfilPage extends StatefulWidget {
 }
 
 class _ProfilPageState extends State<ProfilPage> {
+  AuthService _authService = AuthService();
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children:const [
+        children: [
           CircleAvatar(
             radius: 50,
             backgroundColor: Colors.blue,
             child: Icon(Icons.account_circle_outlined,color: Colors.white,size: 100),
           ),
-          SizedBox(
-            height: 50,
-          ),
           Text("Kullanıcı Bilgileri"),
-          SizedBox(
-            height: 20,
-          ),
           Text("İsim:"),
-          SizedBox(
-            height: 300,
+          InkWell(
+            onTap: (){
+              _authService.signOut();
+              Navigator.pop(context);
+            },
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 5),
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white, width: 2),
+                  //color: colorPrimaryShade,
+                  borderRadius: BorderRadius.all(Radius.circular(30))),
+              child: Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: Center(
+                    child: Text(
+                      "Çıkış yap",
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 20,
+                      ),
+                    )),
+              ),
+            ),
           ),
 
         ],

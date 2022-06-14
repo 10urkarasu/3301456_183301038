@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:haber_gundem/pages/profil_pages/siebar_pages/hakk%C4%B1nda_page.dart';
 import 'package:haber_gundem/pages/profil_pages/siebar_pages/hatabildir_page.dart';
+import 'package:haber_gundem/pages/profil_pages/siebar_pages/kaydedilenhaberler_page.dart';
 import 'package:haber_gundem/pages/profil_pages/siebar_pages/profil_page.dart';
 import 'package:haber_gundem/pages/profil_pages/siebar_pages/tema_page.dart';
 import 'package:haber_gundem/pages/profil_pages/siebar_pages/versiyon_page.dart';
+import 'package:haber_gundem/pages/profil_pages/siebar_pages/yuklenen_haberler.dart';
 
 class ProfilPages extends StatefulWidget {
   const ProfilPages({Key? key}) : super(key: key);
@@ -20,6 +22,8 @@ class _ProfilPageState extends State<ProfilPages> {
     HakkindaPage(),
     VersiyonPage(),
     HataBildirPage(),
+    KaydedilenHaberler(),
+    YuklenenHaber()
   ];
   @override
   Widget build(BuildContext context) {
@@ -50,6 +54,7 @@ class _ProfilPageState extends State<ProfilPages> {
                       setState(()=>currentIndex=0);
                     },
                   ),
+
                 TextButton(
                   child: Text("Tema",style: TextStyle(fontSize: 20)),
                   onPressed: () {
@@ -72,6 +77,18 @@ class _ProfilPageState extends State<ProfilPages> {
                   child: Text("Hata Bildir",style: TextStyle(fontSize: 20)),
                   onPressed: () {
                     setState(()=>currentIndex=4);
+                  },
+                ),
+                TextButton(
+                  child: Text("Kaydedilen Haberler",style: TextStyle(fontSize: 20)),
+                  onPressed: () {
+                    setState(()=>currentIndex=5);
+                  },
+                ),
+                TextButton(
+                  child: Text("Yuklenen Haberler",style: TextStyle(fontSize: 20)),
+                  onPressed: () {
+                    setState(()=>currentIndex=6);
                   },
                 ),
               ],
