@@ -12,12 +12,12 @@ class KaydedilenHaberler extends StatefulWidget {
 
 class _KaydedilenHaberlerState extends State<KaydedilenHaberler> {
   DatabaseHelper _databaseHelper = DatabaseHelper();
-  List<Result> allNotes = <Result>[];
+  List<Result> haber = <Result>[];
   void getNotes() async {
-    var notesFuture = _databaseHelper.getAllHaber();
-    await notesFuture.then((data) {
+    var haberFuture = _databaseHelper.getAllHaber();
+    await haberFuture.then((data) {
       setState(() {
-        this.allNotes = data.cast<Result>();
+        this.haber = data.cast<Result>();
       });
     });
   }
@@ -30,9 +30,19 @@ class _KaydedilenHaberlerState extends State<KaydedilenHaberler> {
   Widget build(BuildContext context) {
     return Container(
         child: ListView.builder(
-            itemCount: allNotes.length,
+            itemCount: haber.length,
             itemBuilder: (context, index) {
-              return Text(allNotes[index].name.toString());
+              return ListTile(
+                leading: Image.network(haber[index].image.toString()),
+                title: Text(haber[index].name.toString()),
+                subtitle: Text(haber[index].description.toString()),
+                trailing: IconButton(
+                  icon:  Icon(Icons.delete),
+                  onPressed: (){
+                    _databaseHelper.delete(index.toString());
+                  },
+                ),
+              );
               })
     );
   }

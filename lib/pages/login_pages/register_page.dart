@@ -22,6 +22,13 @@ class _RegisterPageState extends State<RegisterPage> {
     return Scaffold(
         body: Stack(
           children: [
+            Image(image: AssetImage("lib/assets/background.jpg",
+            ),
+              fit: BoxFit.cover,
+              height: double.infinity,
+              width: double.infinity,
+              alignment: Alignment.center,
+            ),
             Center(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),

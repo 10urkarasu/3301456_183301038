@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:haber_gundem/models/spor_models/PuanDurumuModel.dart';
+
+import '../models/spor_models/PuanDurumuModel.dart';
+
 
 class PuanDurumuWidget extends StatefulWidget {
   const PuanDurumuWidget({Key? key, required this.widget, required this.index}) : super(key: key);
@@ -28,7 +30,7 @@ class _PuanDurumuWidgetState extends State<PuanDurumuWidget> {
           SizedBox(width:30,child: Text(widget.widget.result![widget.index].win.toString())),
           SizedBox(width:30,child: Text(widget.widget.result![widget.index].draw.toString())),
           SizedBox(width:30,child: Text(widget.widget.result![widget.index].lose.toString())),
-          SizedBox(width:30,child: Text(widget.widget.result![widget.index].rank.toString())),
+          SizedBox(width:30,child: Text(widget.widget.result![widget.index].point.toString())),
         ],
       ),
     );

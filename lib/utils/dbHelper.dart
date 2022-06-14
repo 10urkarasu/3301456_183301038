@@ -43,17 +43,12 @@ class DatabaseHelper {
     var result = await db?.insert("$_haberTable", resultModel.toMap());
     return result;
   }
-  Future<int?> update(Result resultModel) async {
-    Database? db = await this.database;
-    var result = await db?.update("$_haberTable", resultModel.toMap(),
-        where: "key=?", whereArgs: [resultModel.key]);
-    return result;
-  }
+
   Future<int?> delete(String key) async {
     Database? db = await this.database;
-    //Daha sonra database'den ilgili id'deki değerleri delete etmesini istiyoruz.
     var result = await db?.rawDelete("delete from $_haberTable where key=$key");
     return result;
   }
 }
 
+ 

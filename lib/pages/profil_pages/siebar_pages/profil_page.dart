@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../../services/auth_services/auth_service.dart';
 
 class ProfilPage extends StatefulWidget {
@@ -23,8 +22,7 @@ class _ProfilPageState extends State<ProfilPage> {
             backgroundColor: Colors.blue,
             child: Icon(Icons.account_circle_outlined,color: Colors.white,size: 100),
           ),
-          Text("Kullanıcı Bilgileri"),
-          Text("İsim:"),
+          Text(_authService.userInfoEmail()),
           InkWell(
             onTap: (){
               _authService.signOut();

@@ -17,14 +17,24 @@ class _YuklenenHaberState extends State<YuklenenHaber> {
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
         stream: _statusService.getStatus(),
-    builder: (context, snaphot) {
-    return !snaphot.hasData
-    ? CircularProgressIndicator()
-        : ListView.builder(
-    itemCount: snaphot.data!.docs.length,
-    itemBuilder: (context, index) {
-    DocumentSnapshot mypost = snaphot.data!.docs[index];
-     return Text("");
+        builder: (context, snaphot) {
+          return !snaphot.hasData
+            ? CircularProgressIndicator()
+                : ListView.builder(
+                itemCount: snaphot.data!.docs.length,
+                itemBuilder: (context, index) {
+                  DocumentSnapshot haber = snaphot.data!.docs[index];
+                return ListTile(
+                  leading: Image.network(haber["image"]),
+                  title: Text(haber["name"]),
+                  subtitle: Text(haber["description"]),
+                  trailing: IconButton(
+                    icon:  Icon(Icons.delete),
+                    onPressed: (){
+                     _statusService.removeStatus(haber.id);
+                    },
+                  ),
+                );
     }
     );
 });
