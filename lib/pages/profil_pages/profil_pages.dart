@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:haber_gundem/pages/profil_pages/siebar_pages/hakk%C4%B1nda_page.dart';
-import 'package:haber_gundem/pages/profil_pages/siebar_pages/hatabildir_page.dart';
-import 'package:haber_gundem/pages/profil_pages/siebar_pages/kaydedilenhaberler_page.dart';
-import 'package:haber_gundem/pages/profil_pages/siebar_pages/profil_page.dart';
-import 'package:haber_gundem/pages/profil_pages/siebar_pages/tema_page.dart';
-import 'package:haber_gundem/pages/profil_pages/siebar_pages/versiyon_page.dart';
-import 'package:haber_gundem/pages/profil_pages/siebar_pages/yuklenen_haberler.dart';
+import 'package:haber_gundem/pages/profil_pages/sidebar_pages/hatabildir_page.dart';
+import 'package:haber_gundem/pages/profil_pages/sidebar_pages/kaydedilenhaberler_page.dart';
+import 'package:haber_gundem/pages/profil_pages/sidebar_pages/profil_page.dart';
+import 'package:haber_gundem/pages/profil_pages/sidebar_pages/tema_page.dart';
+import 'package:haber_gundem/pages/profil_pages/sidebar_pages/versiyon_page.dart';
+import 'package:haber_gundem/pages/profil_pages/sidebar_pages/yuklenen_haberler.dart';
+
+
+import 'sidebar_pages/hakkinda_page.dart';
+
 
 class ProfilPages extends StatefulWidget {
   const ProfilPages({Key? key}) : super(key: key);

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:haber_gundem/pages/e%C4%9Flence_page.dart';
 import 'package:haber_gundem/pages/gundem_pages/gundem_page.dart';
 import 'package:haber_gundem/pages/profil_pages/profil_pages.dart';
 import 'package:haber_gundem/pages/spor_pages/spor_page.dart';
+
+import '../pages/eglence_page.dart';
 
 class MyNavigateBar extends StatefulWidget {
   const MyNavigateBar({Key? key}) : super(key: key);

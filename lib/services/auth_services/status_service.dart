@@ -7,7 +7,6 @@ class StatusService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   Future<Result> addStatus(Result result) async {
     var ref = _firestore.collection("Haber").doc(AuthService().userInfo().toString()).collection("Haberler");
-    var documentRef = await ref.add(result.toJson());
     return Result(key: result.key,url: result.url,description: result.description,image: result.image,name: result.name,source: result.source,date: result.date);
   }
 

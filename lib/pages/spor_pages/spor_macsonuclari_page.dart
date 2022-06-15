@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:haber_gundem/services/spor_services/spor_macsonuclari_service.dart';
-import 'package:haber_gundem/widgets/ma%C3%A7sonu%C3%A7lari_widget.dart';
 import '../../models/spor_models/MacSonuclariModel.dart';
+import '../../widgets/macsonuclari_widget.dart';
 
 class MacSonuclari extends StatefulWidget {
   const MacSonuclari({Key? key}) : super(key: key);
